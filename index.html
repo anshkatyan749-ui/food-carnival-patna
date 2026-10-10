@@ -27,7 +27,7 @@
     <a href="#gallery">Gallery</a>
     <a href="#visit">Visit</a>
   </nav>
-  <button class="btn btn--book" data-open-booking type="button">Book a table</button>
+  <a class="btn btn--book" href="https://wa.me/919431088219?text=Hi%20Food%20Carnival!%20I%27d%20like%20to%20book%20a%20table." target="_blank" rel="noopener">Book on WhatsApp</a>
   <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
 </header>
 
@@ -48,8 +48,8 @@
       </h1>
       <p class="hero__lede" data-rise>Clay-tandoor kebabs, dough-sealed Champaran ahuna handi and slow dum biryani — cooked over charcoal, served the way Patna likes it.</p>
       <div class="hero__cta" data-rise>
-        <button class="btn btn--book btn--lg" data-open-booking type="button">Reserve a table</button>
         <a class="btn btn--ghost btn--lg" href="#menu">Browse the menu</a>
+        <a class="btn btn--ghost btn--lg" href="https://wa.me/919431088219?text=Hi%20Food%20Carnival!%20I%27d%20like%20to%20book%20a%20table." target="_blank" rel="noopener">Book on WhatsApp</a>
       </div>
       <ul class="hero__facts" data-rise>
         <li><strong>11:30–23:30</strong><span>Open every day</span></li>
@@ -100,16 +100,6 @@
     <div class="menu__grid" id="menuGrid" aria-live="polite"></div>
   </section>
 
-  <!-- BOOKING STRIP -->
-  <section class="reserve">
-    <img src="img/hero-2.jpg" alt="" aria-hidden="true" class="reserve__bg" loading="lazy" />
-    <div class="reserve__inner">
-      <h2 class="h2 h2--light" data-rise>Book your table, or pre-order for pickup.</h2>
-      <p data-rise>Tell us your name, when you'll arrive and what time you'd like the food ready. We confirm on WhatsApp within minutes.</p>
-      <button class="btn btn--book btn--lg" data-open-booking type="button">Start a reservation</button>
-    </div>
-  </section>
-
   <!-- TEAM -->
   <section class="team" id="team">
     <div class="team__head">
@@ -145,6 +135,20 @@
       <iframe title="Map to Food Carnival, Bailey Road, Patna" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=B%2F58+Bailey+Road+Khajpura+Patna&output=embed"></iframe>
     </div>
   </section>
+  <!-- BOOK (self-service, end of page) -->
+  <section class="reserve" id="book">
+    <img src="img/hero-2.jpg" alt="" aria-hidden="true" class="reserve__bg" loading="lazy" />
+    <div class="reserve__inner">
+      <h2 class="h2 h2--light" data-rise>Book a table, or pre-order for pickup.</h2>
+      <p data-rise>No forms to fill. Message us on WhatsApp with your name, party size and arrival time — or just call. We reply to confirm, usually within minutes.</p>
+      <div class="reserve__cta" data-rise>
+        <a class="btn btn--book btn--lg" href="https://wa.me/919431088219?text=Hi%20Food%20Carnival!%20I%27d%20like%20to%20book%20a%20table." target="_blank" rel="noopener">Message on WhatsApp</a>
+        <a class="btn btn--ghost btn--lg" href="tel:+919431088219">Call +91 94310 88219</a>
+      </div>
+      <p class="reserve__hint" data-rise>Open every day, 11:30 AM – 11:30 PM · B/58, Bailey Road, Khajpura</p>
+    </div>
+  </section>
+
 </main>
 
 <!-- FOOTER -->
@@ -156,43 +160,10 @@
   <div class="foot__cols">
     <div><h3>Visit</h3><p>B/58, opp. Maurya Vihar<br>Bailey Road, Khajpura<br>Patna 800014</p></div>
     <div><h3>Hours</h3><p>Open every day<br>11:30 AM – 11:30 PM</p></div>
-    <div><h3>Order &amp; tables</h3><p><a href="tel:+919431088219">+91 94310 88219</a><br><button class="linkbtn" data-open-booking>Book a table</button></p></div>
+    <div><h3>Order &amp; tables</h3><p><a href="tel:+919431088219">+91 94310 88219</a><br><a href="https://wa.me/919431088219?text=Hi%20Food%20Carnival!%20I%27d%20like%20to%20book%20a%20table." target="_blank" rel="noopener">Book on WhatsApp</a></p></div>
   </div>
   <p class="foot__fine">© <span id="year"></span> Food Carnival, Patna. Demonstration website.</p>
 </footer>
-
-<!-- BOOKING DRAWER -->
-<div class="drawer" id="booking" hidden>
-  <div class="drawer__scrim" data-close-booking></div>
-  <div class="drawer__panel" role="dialog" aria-modal="true" aria-labelledby="bkTitle">
-    <button class="drawer__x" data-close-booking aria-label="Close">×</button>
-    <p class="eyebrow">Reservation</p>
-    <h2 class="h2" id="bkTitle">Hold my table</h2>
-    <form id="bookingForm" novalidate>
-      <label>Full name<input name="name" type="text" required placeholder="e.g. Ansh Kumar" autocomplete="name" /></label>
-      <label>Phone / WhatsApp<input name="phone" type="tel" required placeholder="10-digit mobile" autocomplete="tel" inputmode="numeric" /></label>
-      <div class="row">
-        <label>Guests<select name="guests"></select></label>
-        <label>Date<input name="date" type="date" required /></label>
-      </div>
-      <div class="row">
-        <label>Arrival time<input name="arrival" type="time" required min="11:30" max="23:00" /></label>
-        <label>Pickup time <span class="opt">(takeaway)</span><input name="pickup" type="time" /></label>
-      </div>
-      <label>Order type
-        <select name="kind">
-          <option value="Dine-in table">Dine-in — table booking</option>
-          <option value="Table + pre-order food">Table + food pre-ordered</option>
-          <option value="Pickup only">Pickup only (no table)</option>
-        </select>
-      </label>
-      <label>Anything we should know? <span class="opt">(optional)</span><textarea name="notes" rows="2" placeholder="Birthday, high-chair, no-onion, favourite table…"></textarea></label>
-      <p class="drawer__err" id="bkErr" role="alert" hidden></p>
-      <button class="btn btn--book btn--lg btn--full" type="submit">Send on WhatsApp</button>
-      <p class="drawer__hint">Opens WhatsApp with your details pre-filled. No account needed — we reply to confirm.</p>
-    </form>
-  </div>
-</div>
 
 <script src="js/menu-data.js"></script>
 <script src="js/team-data.js"></script>

@@ -4,7 +4,6 @@
 
   var MENU = window.FC_MENU || [];
   var TEAM = window.FC_TEAM || [];
-  var WA_NUMBER = '919431088219'; // reservations line
 
   var y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
@@ -133,91 +132,4 @@
   }).join('');
 
   observeRises();
-
-  /* ---------- booking drawer ---------- */
-  var drawer = document.getElementById('booking');
-  var form = document.getElementById('bookingForm');
-  var errEl = document.getElementById('bkErr');
-  var lastFocus = null;
-
-  // guest options
-  var guests = form.elements['guests'];
-  for (var g = 1; g <= 20; g++) {
-    var o = document.createElement('option'); o.value = g; o.textContent = g + (g === 1 ? ' guest' : ' guests');
-    guests.appendChild(o);
-  }
-  guests.value = 4;
-
-  // default date = today, default arrival = next hour
-  var today = new Date();
-  form.elements['date'].value = today.toISOString().slice(0, 10);
-  form.elements['date'].min = today.toISOString().slice(0, 10);
-  var next = new Date(today.getTime() + 60 * 60 * 1000);
-  form.elements['arrival'].value = String(next.getHours()).padStart(2, '0') + ':00';
-
-  function openDrawer() {
-    lastFocus = document.activeElement;
-    drawer.hidden = false;
-    document.body.style.overflow = 'hidden';
-    setTimeout(function () { form.elements['name'].focus(); }, 60);
-    document.addEventListener('keydown', escClose);
-  }
-  function closeDrawer() {
-    drawer.hidden = true;
-    document.body.style.overflow = '';
-    document.removeEventListener('keydown', escClose);
-    if (lastFocus) lastFocus.focus();
-  }
-  function escClose(e) { if (e.key === 'Escape') { closeDrawer(); } }
-
-  document.querySelectorAll('[data-open-booking]').forEach(function (b) { b.addEventListener('click', openDrawer); });
-  document.querySelectorAll('[data-close-booking]').forEach(function (b) { b.addEventListener('click', closeDrawer); });
-
-  function showErr(msg, field) {
-    errEl.textContent = msg; errEl.hidden = false;
-    if (field) { field.classList.add('invalid'); field.focus(); }
-  }
-  function clearErr() {
-    errEl.hidden = true;
-    form.querySelectorAll('.invalid').forEach(function (el) { el.classList.remove('invalid'); });
-  }
-
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    clearErr();
-    var f = form.elements;
-    var name = f['name'].value.trim();
-    var phone = f['phone'].value.replace(/\D/g, '');
-    var kind = f['kind'].value;
-
-    if (name.length < 2) return showErr('Please tell us your name.', f['name']);
-    if (phone.length < 10) return showErr('Please enter a valid 10-digit mobile number.', f['phone']);
-    if (!f['date'].value) return showErr('Please choose a date.', f['date']);
-
-    var arrival = f['arrival'].value;
-    var pickup = f['pickup'].value;
-    if (!arrival && !pickup) return showErr('Please set an arrival time, a pickup time, or both.', f['arrival']);
-
-    var lines = [];
-    lines.push('Hello Food Carnival! I would like to make a reservation.');
-    lines.push('');
-    lines.push('Name: ' + name);
-    lines.push('Phone: ' + phone);
-    lines.push('Guests: ' + f['guests'].value);
-    lines.push('Date: ' + f['date'].value);
-    if (arrival) lines.push('Arrival time: ' + arrival);
-    if (pickup) lines.push('Pickup time: ' + pickup);
-    lines.push('Type: ' + kind);
-    if (f['notes'].value.trim()) lines.push('Notes: ' + f['notes'].value.trim());
-    lines.push('');
-    lines.push('Please confirm, thank you!');
-
-    var url = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(lines.join('\n'));
-    window.open(url, '_blank', 'noopener');
-
-    closeDrawer();
-    form.reset();
-    guests.value = 4;
-    form.elements['date'].value = today.toISOString().slice(0, 10);
-  });
 })();
