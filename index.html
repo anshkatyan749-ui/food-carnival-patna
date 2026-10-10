@@ -1,989 +1,212 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    
-    <!-- Primary Meta Tags -->
-    <title>Food Carnival Patna | Authentic Tandoor, Ahuna Handi & Royal Dining</title>
-    <meta name="title" content="Food Carnival Patna | Authentic Tandoor, Ahuna Handi & Royal Dining" />
-    <meta name="description" content="Patna's celebrated culinary destination on Bailey Road. Authentic Champaran Ahuna Handi, slow-cooked Dal Makhani, clay tandoor kebabs, and zero-wait table arrival pre-orders." />
-    <meta name="keywords" content="Food Carnival Patna, Carnival Cafe Bailey Road, Patna restaurants, best butter chicken Patna, Ahuna mutton Patna, table reservation Patna, food pre-order Patna" />
-    <meta name="theme-color" content="#0d0d12" />
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Food Carnival Patna — Awadhi Tandoor, Ahuna Handi & Royal Dining</title>
+<meta name="description" content="Food Carnival, Bailey Road, Khajpura, Patna. Wood-fired tandoor, Champaran ahuna handi and royal Awadhi feasts. Book a table or pre-order pickup." />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,600&family=Marcellus&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="restaurant" />
-    <meta property="og:url" content="https://foodcarnivalpatna.in/" />
-    <meta property="og:title" content="Food Carnival Patna | Royal Awadhi & Tandoor Dining" />
-    <meta property="og:description" content="Experience authentic clay tandoor cooking, Dum biryani, and Champaran Ahuna mutton on Bailey Road, Patna. Order online or reserve your table." />
-    <meta property="og:image" content="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop" />
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#top">
+    <span class="nav__mark" aria-hidden="true">FC</span>
+    <span class="nav__name">Food&nbsp;Carnival<em>Patna</em></span>
+  </a>
+  <nav class="nav__links" aria-label="Primary">
+    <a href="#story">Story</a>
+    <a href="#menu">Menu</a>
+    <a href="#team">Kitchen</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#visit">Visit</a>
+  </nav>
+  <button class="btn btn--book" data-open-booking type="button">Book a table</button>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</header>
 
-    <!-- Google Fonts: Editorial Serif + Precision Sans + Monospace -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<main id="top">
 
-    <script type="module" crossorigin src="./assets/index--YOeY_bN.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DCICcvAZ.css">
-  </head>
-  <body>
-    <!-- Top Announcement Marquee Strip -->
-    <div class="top-ticker" id="topTicker" aria-label="Restaurant status announcements">
-      <div class="ticker-content">
-        <span class="ticker-item"><span class="pulse-dot"></span> <b>LIVE KITCHEN</b>: Wood-Fired Tandoor & Earthen Ahuna Active</span>
-        <span class="ticker-sep">✦</span>
-        <span class="ticker-item">BAILEY ROAD, KHAJPURA, PATNA (OPP. MAURYA VIHAR)</span>
-        <span class="ticker-sep">✦</span>
-        <span class="ticker-item">TABLE ARRIVAL PRE-ORDERS ACTIVE · ZERO SEATING WAIT</span>
-        <span class="ticker-sep">✦</span>
-        <span class="ticker-item">RATED 4.8★ ON ZOMATO & GOOGLE (2,450+ PATNA PATRONS)</span>
-        <span class="ticker-sep">✦</span>
-        <span class="ticker-item">OPEN DAILY: 11:30 AM — 11:30 PM NON-STOP</span>
-      </div>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__media">
+      <img src="img/hero-0.jpg" alt="Warm dining room at Food Carnival" class="hero__img" />
+      <div class="hero__scrim"></div>
     </div>
-
-    <!-- Main Navigation Header -->
-    <header class="site-header" id="siteHeader">
-      <div class="header-inner wrap">
-        <!-- Brand Logo -->
-        <a href="#hero" class="brand-logo" aria-label="Food Carnival Patna Home">
-          <div class="logo-mark">
-            <span class="logo-fc">FC</span>
-            <div class="logo-glow"></div>
-          </div>
-          <div class="logo-text">
-            <span class="logo-title">FOOD CARNIVAL</span>
-            <span class="logo-sub">PATNA · BAILEY ROAD</span>
-          </div>
-        </a>
-
-        <!-- Live Status Pill (Antideploy inspired) -->
-        <div class="status-indicator-pill" id="liveKitchenPill">
-          <span class="status-indicator-dot"></span>
-          <span class="status-indicator-text">Kitchen Live · <strong>Table Pre-Orders Open</strong></span>
-        </div>
-
-        <!-- Desktop Navigation Links -->
-        <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
-          <a href="#menu-section" class="nav-link">Menu & Order</a>
-          <a href="#smart-stage" class="nav-link">Arrival Pre-Order</a>
-          <a href="#team-section" class="nav-link">The Chefs</a>
-          <a href="#experience-section" class="nav-link">Ambiance</a>
-          <a href="#reviews-section" class="nav-link">Patna Reviews</a>
-          <a href="#location-section" class="nav-link">Location</a>
-        </nav>
-
-        <!-- Header Actions -->
-        <div class="header-actions">
-          <button type="button" class="btn btn-outline" id="openReserveModalBtn" aria-label="Reserve a dining table">
-            <i data-lucide="calendar"></i>
-            <span>Book Table</span>
-          </button>
-
-          <button type="button" class="btn btn-cart" id="openCartDrawerBtn" aria-label="View current food order">
-            <i data-lucide="shopping-bag"></i>
-            <span class="cart-label">Order</span>
-            <span class="cart-count-badge" id="cartCountBadge">0</span>
-            <span class="cart-total-badge" id="cartTotalBadge">₹0</span>
-          </button>
-
-          <!-- Mobile Menu Trigger -->
-          <button type="button" class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
-            <i data-lucide="menu" id="menuIcon"></i>
-          </button>
-        </div>
+    <div class="hero__inner">
+      <p class="eyebrow eyebrow--light" data-rise>Bailey Road · Khajpura · Patna</p>
+      <h1 class="hero__title">
+        <span class="line" data-rise>A grand</span>
+        <span class="line line--italic" data-rise>Awadhi feast,</span>
+        <span class="line" data-rise>fire-lit nightly.</span>
+      </h1>
+      <p class="hero__lede" data-rise>Clay-tandoor kebabs, dough-sealed Champaran ahuna handi and slow dum biryani — cooked over charcoal, served the way Patna likes it.</p>
+      <div class="hero__cta" data-rise>
+        <button class="btn btn--book btn--lg" data-open-booking type="button">Reserve a table</button>
+        <a class="btn btn--ghost btn--lg" href="#menu">Browse the menu</a>
       </div>
-    </header>
-
-    <!-- Mobile Drawer Navigation -->
-    <div class="mobile-nav-drawer" id="mobileNavDrawer">
-      <div class="mobile-nav-links">
-        <a href="#menu-section" class="mobile-nav-link">Specialties & Menu</a>
-        <a href="#smart-stage" class="mobile-nav-link">Arrival Pre-Order Simulator</a>
-        <a href="#team-section" class="mobile-nav-link">The Culinary Team</a>
-        <a href="#experience-section" class="mobile-nav-link">Rooftop & Banquets</a>
-        <a href="#reviews-section" class="mobile-nav-link">Patna Patron Reviews</a>
-        <a href="#location-section" class="mobile-nav-link">Directions & Hours</a>
-      </div>
-      <div class="mobile-nav-actions">
-        <button class="btn btn-primary w-full" id="mobileReserveBtn">
-          <i data-lucide="calendar"></i> Reserve a Dining Table
-        </button>
-      </div>
+      <ul class="hero__facts" data-rise>
+        <li><strong>11:30–23:30</strong><span>Open every day</span></li>
+        <li><strong>₹600</strong><span>for two, approx.</span></li>
+        <li><strong>4.2★</strong><span>290+ guests rated</span></li>
+      </ul>
     </div>
-
-    <main id="mainContent">
-      <!-- HERO SECTION -->
-      <section class="hero-section" id="hero">
-        <div class="hero-backdrop" aria-hidden="true">
-          <div class="hero-gradient"></div>
-          <div class="hero-grid-pattern"></div>
-        </div>
-
-        <div class="wrap hero-container">
-          <div class="hero-content">
-            <div class="hero-pill-badge" data-fade-in>
-              <span class="badge-accent">FINE DINING & CELEBRATIONS</span>
-              <span class="badge-loc">BAILEY ROAD · PATNA</span>
-            </div>
-
-            <h1 class="hero-title" data-fade-in>
-              Where Patna Gathers for <span class="text-serif-italic">Grand Awadhi Flavors</span> & Smoky Charcoal Feasts.
-            </h1>
-
-            <p class="hero-lead" data-fade-in>
-              From sealed earthenware <strong>Champaran Ahuna Handi</strong> and 18-hour simmered <strong>Dal Makhani</strong> to sizzling clay tandoor kebabs. Pre-order with your exact arrival time—so your table is steaming hot the instant you sit down.
-            </p>
-
-            <div class="hero-actions" data-fade-in>
-              <a href="#menu-section" class="btn btn-primary btn-large">
-                <span>Explore Full Menu</span>
-                <i data-lucide="arrow-right"></i>
-              </a>
-
-              <a href="#smart-stage" class="btn btn-glass btn-large">
-                <i data-lucide="clock"></i>
-                <span>Smart Pre-Order Arrival</span>
-              </a>
-
-              <button class="btn btn-ghost btn-large" id="heroReserveBtn">
-                <i data-lucide="utensils"></i>
-                <span>Book a Table</span>
-              </button>
-            </div>
-
-            <!-- Metric Highlights Strip (Antideploy inspired precision metric cards) -->
-            <div class="hero-metrics-grid" data-fade-in>
-              <div class="metric-card">
-                <div class="metric-num">4.8<span class="metric-unit">★</span></div>
-                <div class="metric-label">Zomato & Google Rating</div>
-                <div class="metric-sub">Over 2,450+ verified Patna diners</div>
-              </div>
-
-              <div class="metric-card">
-                <div class="metric-num">18<span class="metric-unit">Hrs</span></div>
-                <div class="metric-label">Charcoal Simmered Dal</div>
-                <div class="metric-sub">Pure farm butter & fresh cream</div>
-              </div>
-
-              <div class="metric-card">
-                <div class="metric-num">0<span class="metric-unit">Mins</span></div>
-                <div class="metric-label">Table Seating Wait</div>
-                <div class="metric-sub">With our Arrival Pre-Order system</div>
-              </div>
-
-              <div class="metric-card">
-                <div class="metric-num">100<span class="metric-unit">%</span></div>
-                <div class="metric-label">FSSAI 5-Star Kitchen</div>
-                <div class="metric-sub">Zero artificial colors or preservatives</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- SMART ARRIVAL PRE-ORDER CONSOLE STAGE (Antideploy.com Inspiration) -->
-      <section class="smart-stage-section" id="smart-stage">
-        <div class="wrap">
-          <div class="section-header text-center">
-            <span class="section-kicker">INNOVATIVE DINING TECHNOLOGY</span>
-            <h2 class="section-title">The Arrival Pre-Order Console</h2>
-            <p class="section-subtitle">
-              Inspired by the seamless deployment workflows of <em>antideploy.com</em>: Select your feast, specify your arrival or pickup time, and let our kitchen synchronize the tandoor firing with your watch.
-            </p>
-          </div>
-
-          <!-- Interactive Stage Container -->
-          <div class="stage-container">
-            <div class="stage-window">
-              <!-- Window Bar -->
-              <div class="stage-window-bar">
-                <div class="window-dots">
-                  <span class="dot dot-red"></span>
-                  <span class="dot dot-yellow"></span>
-                  <span class="dot dot-green"></span>
-                </div>
-                <div class="window-title">
-                  <i data-lucide="cpu" class="window-icon"></i>
-                  <span>food-carnival-patna // arrival-orchestrator.engine</span>
-                </div>
-                <div class="window-status">
-                  <span class="status-live-chip">READY</span>
-                </div>
-              </div>
-
-              <!-- Stage Body -->
-              <div class="stage-grid">
-                <!-- Left: Interactive Configuration -->
-                <div class="stage-panel stage-config-panel">
-                  <div class="panel-header">
-                    <span class="panel-num">01</span>
-                    <h3 class="panel-title">Configure Your Dining Sync</h3>
-                  </div>
-
-                  <div class="stage-form">
-                    <div class="form-group">
-                      <label class="form-label" for="stageDiningMode">Dining Mode</label>
-                      <div class="mode-toggle-group" id="stageModeToggle">
-                        <button type="button" class="mode-toggle-btn active" data-mode="dine-in">
-                          <i data-lucide="utensils"></i>
-                          <span>Dine-In Arrival</span>
-                        </button>
-                        <button type="button" class="mode-toggle-btn" data-mode="takeaway">
-                          <i data-lucide="package"></i>
-                          <span>Express Takeaway</span>
-                        </button>
-                        <button type="button" class="mode-toggle-btn" data-mode="delivery">
-                          <i data-lucide="bike"></i>
-                          <span>Patna Delivery</span>
-                        </button>
-                      </div>
-                    </div>
-
-                    <div class="form-row-2">
-                      <div class="form-group">
-                        <label class="form-label" for="stageArrivalTime">
-                          <span id="stageTimeLabel">Estimated Arrival Time</span>
-                        </label>
-                        <select id="stageArrivalTime" class="form-select">
-                          <option value="12:30 PM">12:30 PM (Lunch Hour)</option>
-                          <option value="1:15 PM">1:15 PM (Lunch Rush)</option>
-                          <option value="2:00 PM">2:00 PM (Late Lunch)</option>
-                          <option value="7:30 PM" selected>7:30 PM (Evening Dinner)</option>
-                          <option value="8:15 PM">8:15 PM (Prime Dinner)</option>
-                          <option value="9:00 PM">9:00 PM (Night Feast)</option>
-                          <option value="9:45 PM">9:45 PM (Late Dining)</option>
-                        </select>
-                      </div>
-
-                      <div class="form-group">
-                        <label class="form-label" for="stageGuestCount">Party Size</label>
-                        <select id="stageGuestCount" class="form-select">
-                          <option value="2">2 Guests (Couple / Pair)</option>
-                          <option value="4" selected>4 Guests (Family Table)</option>
-                          <option value="6">6 Guests (Group Celebration)</option>
-                          <option value="8">8+ Guests (Banquet)</option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <div class="form-group">
-                      <label class="form-label">Quick Signature Platter</label>
-                      <div class="quick-preset-cards">
-                        <div class="preset-card active" data-preset="royal-nonveg">
-                          <div class="preset-title">Royal Awadhi Non-Veg</div>
-                          <div class="preset-items">Malai Tikka · Butter Chicken · Garlic Naan · Biryani</div>
-                          <div class="preset-price">₹1,270 (Feeds 3-4)</div>
-                        </div>
-                        <div class="preset-card" data-preset="maharaja-veg">
-                          <div class="preset-title">Patna Maharaja Veg</div>
-                          <div class="preset-items">Paneer Shashlik · Dal Makhani · Laccha Paratha · Phirni</div>
-                          <div class="preset-price">₹980 (Feeds 3)</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <button type="button" class="btn btn-primary w-full" id="stageAddPlatterBtn">
-                      <i data-lucide="plus-circle"></i> Load Platter into Order & Proceed
-                    </button>
-                  </div>
-                </div>
-
-                <!-- Right: Real-time Kitchen Timeline Simulation -->
-                <div class="stage-panel stage-timeline-panel">
-                  <div class="panel-header">
-                    <span class="panel-num">02</span>
-                    <h3 class="panel-title">Real-Time Kitchen Pipeline</h3>
-                    <span class="badge-status-pill">Auto-Synchronized</span>
-                  </div>
-
-                  <div class="kitchen-pipeline-steps" id="kitchenPipeline">
-                    <div class="pipe-step step-done">
-                      <div class="step-marker">
-                        <i data-lucide="check"></i>
-                      </div>
-                      <div class="step-info">
-                        <div class="step-head">
-                          <span class="step-title">Order Handshake & Table Assigned</span>
-                          <span class="step-time">T-30 mins</span>
-                        </div>
-                        <p class="step-desc">Table reserved in AC Dining Hall. Captain notified of arrival schedule.</p>
-                      </div>
-                    </div>
-
-                    <div class="pipe-step step-active">
-                      <div class="step-marker">
-                        <span class="pulse-ring"></span>
-                      </div>
-                      <div class="step-info">
-                        <div class="step-head">
-                          <span class="step-title">Charcoal Bhatti Firing & Skewer Prep</span>
-                          <span class="step-time">T-18 mins</span>
-                        </div>
-                        <p class="step-desc">Ustad Shamim preheats tandoor to 380°C. Chicken marinade basted with garlic butter.</p>
-                      </div>
-                    </div>
-
-                    <div class="pipe-step">
-                      <div class="step-marker">
-                        <i data-lucide="clock"></i>
-                      </div>
-                      <div class="step-info">
-                        <div class="step-head">
-                          <span class="step-title">Dum Pukht Handi Unsealed & Naan Slapped</span>
-                          <span class="step-time">T-6 mins</span>
-                        </div>
-                        <p class="step-desc">Earthen clay seal broken; bubbling gravy plated into copper handis.</p>
-                      </div>
-                    </div>
-
-                    <div class="pipe-step">
-                      <div class="step-marker">
-                        <i data-lucide="bell-ring"></i>
-                      </div>
-                      <div class="step-info">
-                        <div class="step-head">
-                          <span class="step-title">Piping Hot Service at Table</span>
-                          <span class="step-time" id="pipeTargetTime">Target: 7:30 PM</span>
-                        </div>
-                        <p class="step-desc">Zero wait. You sit down, water is poured, and steaming food is placed on your table.</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="stage-footer-note">
-                    <i data-lucide="shield-check"></i>
-                    <span>Guaranteed fresh. If food cools before you arrive, we re-fire fresh naans at zero charge.</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- LIVE CULINARY MENU & ORDERING SYSTEM -->
-      <section class="menu-section" id="menu-section">
-        <div class="wrap">
-          <div class="section-header">
-            <span class="section-kicker">ROYAL RECIPES & STREET CRAFT</span>
-            <h2 class="section-title">The Food Carnival Menu</h2>
-            <p class="section-subtitle">
-              Every dish is freshly prepared to order. Click <strong>“+ Add”</strong> to curate your pre-order or takeaway bag.
-            </p>
-          </div>
-
-          <!-- Controls: Category Pills, Search, Dietary Toggles -->
-          <div class="menu-controls-wrapper">
-            <!-- Search & Filters Row -->
-            <div class="menu-search-filter-bar">
-              <div class="search-input-box">
-                <i data-lucide="search" class="search-icon"></i>
-                <input type="text" id="menuSearchInput" placeholder="Search butter chicken, ahuna mutton, biryani, paneer..." aria-label="Search food items" />
-                <button type="button" class="search-clear-btn" id="searchClearBtn" aria-label="Clear search" hidden>
-                  <i data-lucide="x"></i>
-                </button>
-              </div>
-
-              <div class="dietary-filter-toggles">
-                <button type="button" class="filter-pill-btn" id="vegOnlyFilter" data-active="false">
-                  <span class="diet-dot veg-dot"></span>
-                  <span>Veg Only</span>
-                </button>
-                <button type="button" class="filter-pill-btn" id="nonVegOnlyFilter" data-active="false">
-                  <span class="diet-dot nonveg-dot"></span>
-                  <span>Non-Veg</span>
-                </button>
-                <button type="button" class="filter-pill-btn" id="chefSpecialFilter" data-active="false">
-                  <i data-lucide="star" class="star-icon"></i>
-                  <span>Chef's Specials</span>
-                </button>
-              </div>
-            </div>
-
-            <!-- Category Navigation Tabs -->
-            <div class="category-tabs-container" id="categoryTabsContainer" role="tablist">
-              <!-- Dynamically populated via JS -->
-            </div>
-          </div>
-
-          <!-- Results Feedback Bar -->
-          <div class="menu-results-bar">
-            <span class="results-count" id="menuResultsCount">Showing all delicacies</span>
-            <div class="menu-sort-box">
-              <label for="menuSortSelect">Sort by:</label>
-              <select id="menuSortSelect" class="form-select-sm">
-                <option value="featured">Chef's Curated</option>
-                <option value="rating-desc">Highest Rated (★)</option>
-                <option value="price-asc">Price: Low to High</option>
-                <option value="price-desc">Price: High to Low</option>
-              </select>
-            </div>
-          </div>
-
-          <!-- Menu Items Grid -->
-          <div class="menu-grid" id="menuItemsGrid">
-            <!-- Dynamically populated via menuData.js -->
-          </div>
-
-          <!-- Empty State -->
-          <div class="menu-empty-state" id="menuEmptyState" hidden>
-            <div class="empty-icon"><i data-lucide="utensils-crossed"></i></div>
-            <h3>No delicacies found matching your search</h3>
-            <p>Try clearing your filters or searching for our classics like "Butter Chicken", "Biryani", or "Handi Mutton".</p>
-            <button class="btn btn-outline" id="resetMenuFiltersBtn">Reset All Filters</button>
-          </div>
-        </div>
-      </section>
-
-      <!-- THE CULINARY TEAM & PATNA HERITAGE -->
-      <section class="team-section" id="team-section">
-        <div class="wrap">
-          <div class="section-header text-center">
-            <span class="section-kicker">THE MASTERS OF FLAME & SPICE</span>
-            <h2 class="section-title">The Culinary Artisans</h2>
-            <p class="section-subtitle">
-              Great food is an act of love and lifelong discipline. Meet the veteran chefs and hospitality guardians who shape every flavor at Food Carnival Patna.
-            </p>
-          </div>
-
-          <!-- Team Grid -->
-          <div class="team-grid" id="teamGrid">
-            <!-- Populated via teamData.js -->
-          </div>
-
-          <!-- Founder & Restaurant Philosophy Box -->
-          <div class="philosophy-manifesto-card">
-            <div class="manifesto-badge">OUR CULINARY CODE</div>
-            <h3 class="manifesto-heading">Why We Don't Take Shortcuts in Patna</h3>
-            <div class="manifesto-grid">
-              <div class="manifesto-col">
-                <h4>Authentic Earthen Ahuna</h4>
-                <p>We source hand-thrown clay pots directly from local Champaran potters. Each pot is used once, sealed with wheat dough, and slow-stewed on sal wood charcoal.</p>
-              </div>
-              <div class="manifesto-col">
-                <h4>No Frozen Meats or Gravy Bases</h4>
-                <p>Unlike commercial chain restaurants with pre-frozen gravy buckets, our curries are tempered fresh twice a day. Fresh spices are ground in-house every morning.</p>
-              </div>
-              <div class="manifesto-col">
-                <h4>Warm Bihari Mehmaan-Nawazi</h4>
-                <p>Hospitality in Patna is an art form. We welcome every family with genuine warmth, honoring special dietary customs, and treating every meal like an intimate family celebration.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- AMBIANCE & CELEBRATION BANQUETS -->
-      <section class="experience-section" id="experience-section">
-        <div class="wrap">
-          <div class="section-header">
-            <span class="section-kicker">SPACES DESIGNED FOR JOY</span>
-            <h2 class="section-title">The Dining Experience on Bailey Road</h2>
-            <p class="section-subtitle">
-              Whether an intimate candlelight dinner under the open sky, a lively family gathering, or a corporate conference banquet.
-            </p>
-          </div>
-
-          <div class="experience-grid">
-            <div class="experience-card card-large">
-              <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop" alt="Food Carnival Patna Grand Dining Hall" class="card-bg-img" loading="lazy" />
-              <div class="card-overlay">
-                <span class="card-tag">ROYAL HALL</span>
-                <h3 class="card-title">Main AC Family Dining Hall</h3>
-                <p class="card-desc">Warm timber accents, plush banquette booths, and acoustic baffling for lively family dining without excessive noise.</p>
-                <div class="card-meta"><span>Capacity: 85 Guests</span> · <span>Central AC</span> · <span>Kid Friendly</span></div>
-              </div>
-            </div>
-
-            <div class="experience-card">
-              <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=800&auto=format&fit=crop" alt="Food Carnival Patna Open-air Rooftop" class="card-bg-img" loading="lazy" />
-              <div class="card-overlay">
-                <span class="card-tag">STARLIGHT DINING</span>
-                <h3 class="card-title">Open-Air Rooftop Terrace</h3>
-                <p class="card-desc">Breeze, fairy lights, and live bhatti aromas beneath the Patna sky. Ideal for romantic dinners and evening friend reunions.</p>
-              </div>
-            </div>
-
-            <div class="experience-card">
-              <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=800&auto=format&fit=crop" alt="Food Carnival Patna Celebration Banquet" class="card-bg-img" loading="lazy" />
-              <div class="card-overlay">
-                <span class="card-tag">CELEBRATIONS</span>
-                <h3 class="card-title">Private Banquet & Parties</h3>
-                <p class="card-desc">Equipped for birthdays, anniversaries, corporate launches, and ring ceremonies with customized live buffet catering.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- VERIFIED PATNA DINER REVIEWS -->
-      <section class="reviews-section" id="reviews-section">
-        <div class="wrap">
-          <div class="section-header text-center">
-            <span class="section-kicker">VOICES ACROSS PATNA</span>
-            <h2 class="section-title">Loved by Foodies Across the City</h2>
-            <p class="section-subtitle">
-              From Bailey Road to Kankarbagh, Boring Road, and Danapur—here is what our patrons have to say about Food Carnival.
-            </p>
-          </div>
-
-          <div class="reviews-grid" id="reviewsGrid">
-            <!-- Populated via teamData.js -->
-          </div>
-
-          <!-- Zomato & Google Verified Badge Banner -->
-          <div class="reviews-badge-bar">
-            <div class="badge-item">
-              <span class="badge-score">4.8 / 5.0</span>
-              <span class="badge-source">Google Reviews (1,600+ Ratings)</span>
-            </div>
-            <div class="badge-sep">✦</div>
-            <div class="badge-item">
-              <span class="badge-score">4.6 / 5.0</span>
-              <span class="badge-source">Zomato Dining & Delivery (850+ Ratings)</span>
-            </div>
-            <div class="badge-sep">✦</div>
-            <div class="badge-item">
-              <span class="badge-score">#1 Rated</span>
-              <span class="badge-source">Champaran Ahuna & Butter Chicken in West Patna</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- LOCATION, DIRECTIONS & TIMINGS -->
-      <section class="location-section" id="location-section">
-        <div class="wrap">
-          <div class="location-grid">
-            <div class="location-info">
-              <span class="section-kicker">FIND US IN PATNA</span>
-              <h2 class="section-title">Visit Food Carnival</h2>
-              <p class="location-desc">
-                Conveniently situated on the prominent Bailey Road corridor, opposite Maurya Vihar Apartments and minutes away from Ashiana More and Jagdeo Path.
-              </p>
-
-              <div class="info-blocks">
-                <div class="info-block">
-                  <div class="info-icon"><i data-lucide="map-pin"></i></div>
-                  <div class="info-content">
-                    <h4>Address</h4>
-                    <p>Building B/58, Opp. Maurya Vihar Apartment, Bailey Road, Khajpura, Patna, Bihar — 800014</p>
-                    <span class="landmark-note">Landmark: Beside Bailey Road Flyover & Ashiana crossing</span>
-                  </div>
-                </div>
-
-                <div class="info-block">
-                  <div class="info-icon"><i data-lucide="clock"></i></div>
-                  <div class="info-content">
-                    <h4>Opening Hours</h4>
-                    <p><strong>Monday to Sunday:</strong> 11:30 AM – 11:30 PM (All 7 Days)</p>
-                    <span class="open-status">Kitchen operates continuously without lunch afternoon breaks.</span>
-                  </div>
-                </div>
-
-                <div class="info-block">
-                  <div class="info-icon"><i data-lucide="phone"></i></div>
-                  <div class="info-content">
-                    <h4>Phone & Table Bookings</h4>
-                    <p><strong>+91 94310 88219</strong> / <strong>+91 612 258 7430</strong></p>
-                    <span class="support-note">Direct table booking assistance available on call & WhatsApp</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="location-actions">
-                <a href="https://maps.google.com/?q=Bailey+Road+Patna" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                  <i data-lucide="navigation"></i>
-                  <span>Get Driving Directions</span>
-                </a>
-                <button type="button" class="btn btn-outline" id="locBookTableBtn">
-                  <i data-lucide="calendar"></i>
-                  <span>Reserve Table Here</span>
-                </button>
-              </div>
-            </div>
-
-            <!-- Visual Map Simulation Card -->
-            <div class="map-card-wrapper">
-              <div class="map-card">
-                <div class="map-header">
-                  <div class="map-pin-pulse"></div>
-                  <div class="map-title-box">
-                    <strong>Food Carnival, Patna</strong>
-                    <span>Bailey Road, Khajpura</span>
-                  </div>
-                  <span class="badge-verified">Verified on Maps</span>
-                </div>
-                
-                <div class="map-visual">
-                  <iframe 
-                    title="Food Carnival Patna Location"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14391.73461284568!2d85.0745021!3d25.6071477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed57f5c71a39d1%3A0xb3e648cb9ff4220b!2sBailey%20Rd%2C%20Patna%2C%20Bihar!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
-                    width="100%" 
-                    height="340" 
-                    style="border:0; filter: invert(90%) hue-rotate(180deg) contrast(1.1);" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                  </iframe>
-                </div>
-
-                <div class="map-footer">
-                  <div class="map-perk"><i data-lucide="car"></i> Free Valet Parking Available</div>
-                  <div class="map-perk"><i data-lucide="wifi"></i> High-Speed Guest Wi-Fi</div>
-                  <div class="map-perk"><i data-lucide="credit-card"></i> UPI / Cards Accepted</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- EDITORIAL REFERENCE BOX (ANTIDEPLOY.COM INSPIRATION CREDIT) -->
-      <section class="reference-section" id="reference-section">
-        <div class="wrap">
-          <div class="reference-box">
-            <div class="reference-badge">DESIGN INSPIRATION & BENCHMARK</div>
-            <div class="reference-content">
-              <div class="reference-text">
-                <h3>Crafted with the Digital Precision of <a href="https://antideploy.com" target="_blank" rel="noopener noreferrer" class="reference-link">antideploy.com</a></h3>
-                <p>
-                  Built to break away from generic, cookie-cutter AI restaurant layouts. This digital interface combines high-craft editorial typography, subtle micro-interactions, an interactive time-synchronized pre-order engine, and authentic Patna culinary heritage.
-                </p>
-              </div>
-              <div class="reference-tags">
-                <span class="ref-tag">Editorial Serif & JetBrains Mono</span>
-                <span class="ref-tag">Zero Generic AI Templates</span>
-                <span class="ref-tag">Live Order Pipeline Engine</span>
-                <span class="ref-tag">Patna Ground Truth Data</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="site-footer">
-      <div class="wrap footer-container">
-        <div class="footer-col brand-col">
-          <div class="brand-logo">
-            <div class="logo-mark"><span class="logo-fc">FC</span></div>
-            <div class="logo-text">
-              <span class="logo-title">FOOD CARNIVAL</span>
-              <span class="logo-sub">PATNA · BAILEY ROAD</span>
-            </div>
-          </div>
-          <p class="footer-bio">
-            Patna's premier destination for clay-baked Awadhi delicacies, hand-sealed Champaran Ahuna Handi, and celebration banquets. Honoring the warmth and flavor of Bihar since 2018.
-          </p>
-          <div class="footer-socials">
-            <a href="#" class="social-icon" aria-label="Zomato Page"><i data-lucide="utensils"></i></a>
-            <a href="#" class="social-icon" aria-label="Share Page"><i data-lucide="share-2"></i></a>
-            <a href="#" class="social-icon" aria-label="Patna Guide"><i data-lucide="globe"></i></a>
-            <a href="#" class="social-icon" aria-label="Phone"><i data-lucide="phone"></i></a>
-          </div>
-        </div>
-
-        <div class="footer-col">
-          <h4 class="footer-title">Menu Specialties</h4>
-          <ul class="footer-links">
-            <li><a href="#menu-section" data-cat-jump="starters">Murgh Malai Tikka</a></li>
-            <li><a href="#menu-section" data-cat-jump="mains">Dhabewala Butter Chicken</a></li>
-            <li><a href="#menu-section" data-cat-jump="mains">Champaran Ahuna Mutton</a></li>
-            <li><a href="#menu-section" data-cat-jump="biryani">Royal Awadhi Dum Biryani</a></li>
-            <li><a href="#menu-section" data-cat-jump="breads">Cheese Chilli Garlic Naan</a></li>
-            <li><a href="#menu-section" data-cat-jump="desserts">Shahi Gulab Jamun & Rabdi</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4 class="footer-title">Dining & Services</h4>
-          <ul class="footer-links">
-            <li><a href="#smart-stage">Table Arrival Pre-Order</a></li>
-            <li><a href="#experience-section">Open-Air Rooftop Terrace</a></li>
-            <li><a href="#experience-section">Banquet Hall & Celebrations</a></li>
-            <li><a href="#team-section">Meet Our Master Chefs</a></li>
-            <li><a href="#location-section">Directions & Valet Parking</a></li>
-            <li><a href="#" id="footerReserveLink">Reserve a Table</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4 class="footer-title">Patna Dining Desk</h4>
-          <div class="footer-contact-item">
-            <i data-lucide="map-pin"></i>
-            <span>Opp. Maurya Vihar, Bailey Road, Khajpura, Patna 800014</span>
-          </div>
-          <div class="footer-contact-item">
-            <i data-lucide="phone"></i>
-            <span>+91 94310 88219 / +91 612 258 7430</span>
-          </div>
-          <div class="footer-contact-item">
-            <i data-lucide="mail"></i>
-            <span>dine@foodcarnivalpatna.in</span>
-          </div>
-          <div class="footer-contact-item">
-            <i data-lucide="clock"></i>
-            <span>11:30 AM – 11:30 PM (Everyday)</span>
-          </div>
-          <div class="fssai-badge">
-            <i data-lucide="shield-check"></i>
-            <span>FSSAI Lic. No: 10418000000412</span>
-          </div>
-        </div>
-      </div>
-
-        <div class="wrap footer-bottom">
-        <p>© 2026 Food Carnival Patna. All rights reserved. Made with love for Patna's gastronomy.</p>
-        <div class="footer-bottom-links">
-          <span>Design Benchmark: <a href="https://antideploy.com" target="_blank" rel="noopener noreferrer">antideploy.com</a></span>
-          <span>·</span>
-          <a href="#">Privacy</a>
-          <span>·</span>
-          <a href="#">Terms of Service</a>
-          <span>·</span>
-          <a href="#">FSSAI Hygiene Certificate</a>
-        </div>
-      </div>
-    </footer>
-
-    <!-- ==================== MODALS & DRAWERS ==================== -->
-
-    <!-- SLIDE-OUT CART & PRE-ORDER CHECKOUT DRAWER -->
-    <div class="cart-drawer-backdrop" id="cartDrawerBackdrop" aria-hidden="true"></div>
-    <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping Cart and Pre-Order Checkout">
-      <div class="drawer-header">
-        <div class="drawer-title-box">
-          <i data-lucide="shopping-bag" class="drawer-icon"></i>
-          <div>
-            <h3 class="drawer-title">Your Dining Order</h3>
-            <span class="drawer-subtitle">Food Carnival · Bailey Road, Patna</span>
-          </div>
-        </div>
-        <button type="button" class="drawer-close-btn" id="closeCartDrawerBtn" aria-label="Close cart">
-          <i data-lucide="x"></i>
-        </button>
-      </div>
-
-      <!-- Drawer Body: Order Items or Empty State -->
-      <div class="drawer-body" id="cartDrawerBody">
-        <!-- Rendered by JS -->
-      </div>
-
-      <!-- Drawer Footer with Order Type & Pricing -->
-      <div class="drawer-footer" id="cartDrawerFooter">
-        <!-- Rendered by JS -->
-      </div>
-    </aside>
-
-    <!-- DIGITAL FOOD TOKEN & CONFIRMATION RECEIPT MODAL -->
-    <div class="modal-backdrop" id="receiptModalBackdrop" aria-hidden="true">
-      <div class="modal-window receipt-modal-window" role="dialog" aria-modal="true" aria-labelledby="receiptTitle">
-        <button type="button" class="modal-close-btn" id="closeReceiptModalBtn" aria-label="Close receipt modal">
-          <i data-lucide="x"></i>
-        </button>
-
-        <div class="receipt-card" id="printableReceipt">
-          <!-- Receipt Header -->
-          <div class="receipt-header">
-            <div class="receipt-brand">
-              <span class="receipt-brand-logo">FC</span>
-              <div>
-                <h3 class="receipt-brand-title">FOOD CARNIVAL</h3>
-                <span class="receipt-brand-loc">Bailey Road, Khajpura, Patna - 800014</span>
-              </div>
-            </div>
-            <div class="receipt-token-badge">
-              <span class="token-label">DIGITAL TOKEN</span>
-              <strong class="token-id" id="receiptTokenId">#FC-PATNA-8921</strong>
-            </div>
-          </div>
-
-          <!-- Status Bar -->
-          <div class="receipt-status-banner">
-            <span class="status-indicator-dot"></span>
-            <span id="receiptStatusText">ORDER CONFIRMED & KITCHEN SYNCHRONIZED</span>
-          </div>
-
-          <!-- Guest & Timing Grid -->
-          <div class="receipt-meta-grid">
-            <div class="meta-item">
-              <span class="meta-kicker">GUEST NAME</span>
-              <strong class="meta-val" id="receiptGuestName">Aman Verma</strong>
-            </div>
-            <div class="meta-item">
-              <span class="meta-kicker">PHONE NUMBER</span>
-              <strong class="meta-val" id="receiptGuestPhone">+91 98765 43210</strong>
-            </div>
-            <div class="meta-item">
-              <span class="meta-kicker">DINING MODE</span>
-              <strong class="meta-val" id="receiptDiningMode">Dine-in Arrival Pre-order</strong>
-            </div>
-            <div class="meta-item highlight-meta">
-              <span class="meta-kicker">SCHEDULED ARRIVAL / PICKUP</span>
-              <strong class="meta-val" id="receiptScheduledTime">Today @ 8:15 PM</strong>
-            </div>
-          </div>
-
-          <!-- Itemized Breakdown -->
-          <div class="receipt-items-container">
-            <div class="receipt-items-head">
-              <span>Dish Description</span>
-              <span>Qty</span>
-              <span>Total</span>
-            </div>
-            <div class="receipt-items-list" id="receiptItemsList">
-              <!-- Rendered dynamically -->
-            </div>
-          </div>
-
-          <!-- Financial Summary -->
-          <div class="receipt-totals-box">
-            <div class="totals-row">
-              <span>Subtotal</span>
-              <span id="receiptSubtotal">₹0</span>
-            </div>
-            <div class="totals-row">
-              <span>GST (5%)</span>
-              <span id="receiptGst">₹0</span>
-            </div>
-            <div class="totals-row">
-              <span>Packaging / Service</span>
-              <span id="receiptPackaging">₹0</span>
-            </div>
-            <div class="totals-row grand-total-row">
-              <span>Total Amount (Pay at Counter / Table)</span>
-              <strong id="receiptGrandTotal">₹0</strong>
-            </div>
-          </div>
-
-          <!-- Kitchen instructions if any -->
-          <div class="receipt-notes" id="receiptNotesBox">
-            <span class="meta-kicker">KITCHEN INSTRUCTIONS</span>
-            <p id="receiptNotesText">None specified</p>
-          </div>
-
-          <!-- Visual Barcode Simulation -->
-          <div class="receipt-barcode-box">
-            <div class="barcode-strip"></div>
-            <span class="barcode-code" id="receiptBarcodeCode">FC-PATNA-8921-2026</span>
-          </div>
-        </div>
-
-        <!-- Receipt Modal Actions -->
-        <div class="receipt-actions">
-          <button type="button" class="btn btn-primary" id="printReceiptBtn">
-            <i data-lucide="printer"></i>
-            <span>Print / Save Token</span>
-          </button>
-          <button type="button" class="btn btn-outline" id="receiptDoneBtn">
-            <i data-lucide="check"></i>
-            <span>Done</span>
-          </button>
-        </div>
-      </div>
+    <div class="hero__badge" aria-hidden="true">
+      <svg viewBox="0 0 200 200"><defs><path id="circlePath" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"/></defs><text><textPath href="#circlePath">EST. 2018 · WOOD FIRED · AWADHI · CHAMPARAN · DUM PUKHT · </textPath></text></svg>
     </div>
+  </section>
 
-    <!-- TABLE RESERVATION MODAL -->
-    <div class="modal-backdrop" id="reserveModalBackdrop" aria-hidden="true">
-      <div class="modal-window reserve-modal-window" role="dialog" aria-modal="true" aria-labelledby="reserveModalTitle">
-        <button type="button" class="modal-close-btn" id="closeReserveModalBtn" aria-label="Close reservation modal">
-          <i data-lucide="x"></i>
-        </button>
-
-        <div class="modal-inner">
-          <div class="modal-head">
-            <span class="section-kicker">FINE DINING SEATING</span>
-            <h3 class="modal-title" id="reserveModalTitle">Reserve a Dining Table</h3>
-            <p class="modal-sub">Book your table at Food Carnival, Bailey Road. Instant SMS confirmation & zero waiting queue.</p>
-          </div>
-
-          <form id="tableReservationForm" class="reserve-form">
-            <div class="form-row-2">
-              <div class="form-group">
-                <label class="form-label" for="resName">Full Name *</label>
-                <input type="text" id="resName" class="form-input" placeholder="e.g. Rajesh Kumar" required />
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="resPhone">Phone Number *</label>
-                <input type="tel" id="resPhone" class="form-input" placeholder="+91 98765 43210" pattern="[0-9+\s-]{10,14}" required />
-              </div>
-            </div>
-
-            <div class="form-row-3">
-              <div class="form-group">
-                <label class="form-label" for="resDate">Dining Date *</label>
-                <input type="date" id="resDate" class="form-input" required />
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="resTime">Preferred Time Slot *</label>
-                <select id="resTime" class="form-select" required>
-                  <option value="12:30 PM">12:30 PM (Lunch)</option>
-                  <option value="1:15 PM">1:15 PM (Lunch)</option>
-                  <option value="2:00 PM">2:00 PM (Lunch)</option>
-                  <option value="7:00 PM">7:00 PM (Dinner)</option>
-                  <option value="7:45 PM">7:45 PM (Dinner)</option>
-                  <option value="8:30 PM" selected>8:30 PM (Dinner Peak)</option>
-                  <option value="9:15 PM">9:15 PM (Dinner)</option>
-                  <option value="10:00 PM">10:00 PM (Late Dinner)</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="resGuests">Number of Guests *</label>
-                <select id="resGuests" class="form-select" required>
-                  <option value="1">1 Person</option>
-                  <option value="2" selected>2 Guests (Table for Two)</option>
-                  <option value="4">4 Guests (Family Table)</option>
-                  <option value="6">6 Guests (Group)</option>
-                  <option value="8">8 Guests (Large Family)</option>
-                  <option value="12">12+ Guests (Party Banquet)</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form-row-2">
-              <div class="form-group">
-                <label class="form-label" for="resSeating">Seating Preference</label>
-                <select id="resSeating" class="form-select">
-                  <option value="Main AC Hall">Main AC Family Hall</option>
-                  <option value="Rooftop Terrace">Open-Air Starlight Rooftop</option>
-                  <option value="Private Dining Cabana">Private Family Cabana</option>
-                  <option value="Banquet Celebration">Celebration Banquet Zone</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="resOccasion">Occasion (Optional)</label>
-                <select id="resOccasion" class="form-select">
-                  <option value="Casual Dining">Casual Dining / Family Dinner</option>
-                  <option value="Birthday">Birthday Celebration</option>
-                  <option value="Anniversary">Wedding Anniversary</option>
-                  <option value="Business">Business Lunch / Meet</option>
-                  <option value="Friends Reunion">Friends Reunion</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="resNotes">Special Requests (Optional)</label>
-              <textarea id="resNotes" class="form-textarea" rows="2" placeholder="e.g. Need high chair for child, corner table preferred, birthday dessert surprise..."></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary btn-large w-full" id="submitReservationBtn">
-              <i data-lucide="calendar-check"></i>
-              <span>Confirm Table Reservation</span>
-            </button>
-          </form>
-        </div>
-      </div>
+  <!-- TICKER -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <span>Tandoor lit at 11:30</span><span>✦</span><span>Champaran Ahuna Handi</span><span>✦</span><span>18-hour Dal Makhani</span><span>✦</span><span>Dum Biryani</span><span>✦</span><span>Tangra Indo-Chinese</span><span>✦</span><span>Kulhad Lassi</span><span>✦</span>
+      <span>Tandoor lit at 11:30</span><span>✦</span><span>Champaran Ahuna Handi</span><span>✦</span><span>18-hour Dal Makhani</span><span>✦</span><span>Dum Biryani</span><span>✦</span><span>Tangra Indo-Chinese</span><span>✦</span><span>Kulhad Lassi</span><span>✦</span>
     </div>
+  </div>
 
-    <!-- TOAST NOTIFICATION CONTAINER -->
-    <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+  <!-- STORY -->
+  <section class="story" id="story">
+    <div class="story__imgwrap" data-rise>
+      <img src="img/hero-6.jpg" alt="Kebabs firing on the charcoal tandoor" loading="lazy" />
+      <span class="story__stamp">Since<br>2018</span>
+    </div>
+    <div class="story__body">
+      <p class="eyebrow" data-rise>Our table</p>
+      <h2 class="h2" data-rise>Not a restaurant. A carnival of the old kitchens.</h2>
+      <p data-rise>Food Carnival began on Bailey Road with one clay oven and a stubborn belief that real flavour cannot be hurried. The handi is sealed with dough. The charcoal is fed by hand. The kebab is judged by scent, not by a timer.</p>
+      <p data-rise>Seven years on, the tandoor still burns wood, the dal still simmers eighteen hours, and the same Ustad still refuses to check a thermometer. Come hungry — leave with the smoke of it on your clothes.</p>
+      <ul class="story__list" data-rise>
+        <li>Wood-fired clay tandoor, never gas</li>
+        <li>Champaran-style ahuna mutton, handi-sealed</li>
+        <li>FSSAI 5-star kitchen · seating &amp; takeaway</li>
+      </ul>
+    </div>
+  </section>
 
-  </body>
+  <!-- MENU -->
+  <section class="menu" id="menu">
+    <div class="menu__head">
+      <p class="eyebrow" data-rise>The menu</p>
+      <h2 class="h2" data-rise>Today from the fire &amp; the handi</h2>
+      <p class="menu__note" data-rise>Prices in ₹. Veg marked with a green dot. Ask your server for the daily fish &amp; specials board.</p>
+    </div>
+    <div class="menu__tabs" id="menuTabs" role="tablist" aria-label="Menu categories"></div>
+    <div class="menu__grid" id="menuGrid" aria-live="polite"></div>
+  </section>
+
+  <!-- BOOKING STRIP -->
+  <section class="reserve">
+    <img src="img/hero-2.jpg" alt="" aria-hidden="true" class="reserve__bg" loading="lazy" />
+    <div class="reserve__inner">
+      <h2 class="h2 h2--light" data-rise>Book your table, or pre-order for pickup.</h2>
+      <p data-rise>Tell us your name, when you'll arrive and what time you'd like the food ready. We confirm on WhatsApp within minutes.</p>
+      <button class="btn btn--book btn--lg" data-open-booking type="button">Start a reservation</button>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team" id="team">
+    <div class="team__head">
+      <p class="eyebrow" data-rise>The kitchen</p>
+      <h2 class="h2" data-rise>The hands behind the fire</h2>
+    </div>
+    <div class="team__grid" id="teamGrid"></div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <div class="gallery__head">
+      <p class="eyebrow" data-rise>The plates</p>
+      <h2 class="h2" data-rise>Worth the trip across town</h2>
+    </div>
+    <div class="gallery__grid" id="galleryGrid"></div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="visit" id="visit">
+    <div class="visit__info">
+      <p class="eyebrow" data-rise>Find us</p>
+      <h2 class="h2" data-rise> Bailey Road, Khajpura</h2>
+      <dl class="visit__list">
+        <div data-rise><dt>Address</dt><dd>Building B/58, opp. Maurya Vihar Apartment,<br>Bailey Road, Khajpura, Patna 800014</dd></div>
+        <div data-rise><dt>Hours</dt><dd>Every day · 11:30 AM – 11:30 PM</dd></div>
+        <div data-rise><dt>Phone</dt><dd><a href="tel:+919431088219">+91 94310 88219</a> · <a href="tel:+916122587430">+91 612 258 7430</a></dd></div>
+        <div data-rise><dt>Facilities</dt><dd>Seating · Takeaway · Pure-veg section · Card &amp; cash</dd></div>
+      </dl>
+      <a class="btn btn--book" href="https://maps.google.com/?q=Food+Carnival+Bailey+Road+Khajpura+Patna" target="_blank" rel="noopener">Get directions</a>
+    </div>
+    <div class="visit__map" data-rise>
+      <iframe title="Map to Food Carnival, Bailey Road, Patna" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=B%2F58+Bailey+Road+Khajpura+Patna&output=embed"></iframe>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="foot__top">
+    <span class="nav__mark" aria-hidden="true">FC</span>
+    <p>Food Carnival — a carnival of the old kitchens, on Bailey Road since 2018.</p>
+  </div>
+  <div class="foot__cols">
+    <div><h3>Visit</h3><p>B/58, opp. Maurya Vihar<br>Bailey Road, Khajpura<br>Patna 800014</p></div>
+    <div><h3>Hours</h3><p>Open every day<br>11:30 AM – 11:30 PM</p></div>
+    <div><h3>Order &amp; tables</h3><p><a href="tel:+919431088219">+91 94310 88219</a><br><button class="linkbtn" data-open-booking>Book a table</button></p></div>
+  </div>
+  <p class="foot__fine">© <span id="year"></span> Food Carnival, Patna. Demonstration website.</p>
+</footer>
+
+<!-- BOOKING DRAWER -->
+<div class="drawer" id="booking" hidden>
+  <div class="drawer__scrim" data-close-booking></div>
+  <div class="drawer__panel" role="dialog" aria-modal="true" aria-labelledby="bkTitle">
+    <button class="drawer__x" data-close-booking aria-label="Close">×</button>
+    <p class="eyebrow">Reservation</p>
+    <h2 class="h2" id="bkTitle">Hold my table</h2>
+    <form id="bookingForm" novalidate>
+      <label>Full name<input name="name" type="text" required placeholder="e.g. Ansh Kumar" autocomplete="name" /></label>
+      <label>Phone / WhatsApp<input name="phone" type="tel" required placeholder="10-digit mobile" autocomplete="tel" inputmode="numeric" /></label>
+      <div class="row">
+        <label>Guests<select name="guests"></select></label>
+        <label>Date<input name="date" type="date" required /></label>
+      </div>
+      <div class="row">
+        <label>Arrival time<input name="arrival" type="time" required min="11:30" max="23:00" /></label>
+        <label>Pickup time <span class="opt">(takeaway)</span><input name="pickup" type="time" /></label>
+      </div>
+      <label>Order type
+        <select name="kind">
+          <option value="Dine-in table">Dine-in — table booking</option>
+          <option value="Table + pre-order food">Table + food pre-ordered</option>
+          <option value="Pickup only">Pickup only (no table)</option>
+        </select>
+      </label>
+      <label>Anything we should know? <span class="opt">(optional)</span><textarea name="notes" rows="2" placeholder="Birthday, high-chair, no-onion, favourite table…"></textarea></label>
+      <p class="drawer__err" id="bkErr" role="alert" hidden></p>
+      <button class="btn btn--book btn--lg btn--full" type="submit">Send on WhatsApp</button>
+      <p class="drawer__hint">Opens WhatsApp with your details pre-filled. No account needed — we reply to confirm.</p>
+    </form>
+  </div>
+</div>
+
+<!-- SUCCESS MODAL -->
+<div class="drawer drawer--ok" id="okModal" hidden>
+  <div class="drawer__scrim" data-close-ok></div>
+  <div class="ok" role="dialog" aria-modal="true" aria-labelledby="okTitle">
+    <div class="ok__tick" aria-hidden="true">✓</div>
+    <h2 class="h2" id="okTitle">Request ready</h2>
+    <p id="okBody">We've opened WhatsApp with your reservation. Press send and we'll confirm shortly.</p>
+    <button class="btn btn--book" data-close-ok type="button">Done</button>
+  </div>
+</div>
+
+<script src="js/menu-data.js"></script>
+<script src="js/team-data.js"></script>
+<script src="js/main.js"></script>
+</body>
 </html>
