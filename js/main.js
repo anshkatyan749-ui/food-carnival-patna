@@ -138,8 +138,6 @@
   var drawer = document.getElementById('booking');
   var form = document.getElementById('bookingForm');
   var errEl = document.getElementById('bkErr');
-  var okModal = document.getElementById('okModal');
-  var okBody = document.getElementById('okBody');
   var lastFocus = null;
 
   // guest options
@@ -174,9 +172,6 @@
 
   document.querySelectorAll('[data-open-booking]').forEach(function (b) { b.addEventListener('click', openDrawer); });
   document.querySelectorAll('[data-close-booking]').forEach(function (b) { b.addEventListener('click', closeDrawer); });
-
-  function closeOk() { okModal.hidden = true; document.body.style.overflow = ''; }
-  document.querySelectorAll('[data-close-ok]').forEach(function (b) { b.addEventListener('click', closeOk); });
 
   function showErr(msg, field) {
     errEl.textContent = msg; errEl.hidden = false;
@@ -220,10 +215,7 @@
     var url = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(lines.join('\n'));
     window.open(url, '_blank', 'noopener');
 
-    okBody.textContent = 'We\'ve opened WhatsApp with your reservation pre-filled for ' + name + '. Press send there and we\'ll confirm within minutes.';
     closeDrawer();
-    okModal.hidden = false;
-    document.body.style.overflow = 'hidden';
     form.reset();
     guests.value = 4;
     form.elements['date'].value = today.toISOString().slice(0, 10);
