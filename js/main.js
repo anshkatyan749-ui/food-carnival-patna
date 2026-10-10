@@ -118,18 +118,45 @@
   /* ---------- gallery ---------- */
   var galleryGrid = document.getElementById('galleryGrid');
   var gPics = [
-    { img: 'img/hero-3.jpg', alt: 'Signature butter chicken', cls: 'g-tall' },
-    { img: 'img/hero-5.jpg', alt: 'Dum biryani', cls: 'g-wide' },
-    { img: 'img/hero-4.jpg', alt: 'Indian thali spread', cls: '' },
-    { img: 'img/hero-1.jpg', alt: 'Fine dining table', cls: '' },
-    { img: 'img/hero-6.jpg', alt: 'Tandoor kebabs', cls: 'g-wide' },
-    { img: 'img/hero-2.jpg', alt: 'Restaurant ambiance', cls: '' },
-    { img: 'img/menu-2.jpg', alt: 'Paneer tikka', cls: '' },
-    { img: 'img/menu-0.jpg', alt: 'Malai tikka', cls: '' }
+    { img: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&h=800&fit=crop', alt: 'Signature butter chicken', cls: 'g-tall' },
+    { img: 'https://images.unsplash.com/photo-1563379091339-03246963d51b?w=800&h=500&fit=crop', alt: 'Dum biryani', cls: 'g-wide' },
+    { img: 'https://images.unsplash.com/photo-1512058564366-18510be2db19?w=600&h=600&fit=crop', alt: 'Indian thali spread', cls: '' },
+    { img: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&h=600&fit=crop', alt: 'Tandoori chicken', cls: '' },
+    { img: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=800&h=500&fit=crop', alt: 'Garlic naan', cls: 'g-wide' },
+    { img: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&h=600&fit=crop', alt: 'Kebabs', cls: '' },
+    { img: 'https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&h=600&fit=crop', alt: 'Masala dosa', cls: '' },
+    { img: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&h=600&fit=crop', alt: 'Paneer tikka', cls: '' },
+    { img: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=600&fit=crop', alt: 'Chef preparing food', cls: '' },
+    { img: 'https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=600&h=600&fit=crop', alt: 'Chef at work', cls: '' }
   ];
   galleryGrid.innerHTML = gPics.map(function (p) {
     return '<figure class="' + p.cls + '" data-rise><img loading="lazy" src="' + p.img + '" alt="' + p.alt + '" /></figure>';
   }).join('');
 
   observeRises();
+
+  /* ---------- theme toggle ---------- */
+  var themeToggle = document.getElementById('themeToggle');
+  if (themeToggle) {
+    var savedTheme = localStorage.getItem('fc-theme');
+    if (savedTheme === 'dark') {
+      document.body.classList.add('dark');
+      themeToggle.textContent = '☀️';
+    } else if (savedTheme === 'light') {
+      themeToggle.textContent = '🌙';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.body.classList.add('dark');
+      themeToggle.textContent = '☀️';
+    }
+    themeToggle.addEventListener('click', function() {
+      document.body.classList.toggle('dark');
+      if (document.body.classList.contains('dark')) {
+        themeToggle.textContent = '☀️';
+        localStorage.setItem('fc-theme', 'dark');
+      } else {
+        themeToggle.textContent = '🌙';
+        localStorage.setItem('fc-theme', 'light');
+      }
+    });
+  }
 })();

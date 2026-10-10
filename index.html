@@ -17,7 +17,7 @@
 <!-- NAV -->
 <header class="nav" id="nav">
   <a class="nav__brand" href="#top">
-    <span class="nav__mark" aria-hidden="true">FC</span>
+    <img src="assets/logo.svg" alt="Food Carnival" class="nav__logo" aria-hidden="true" />
     <span class="nav__name">Food&nbsp;Carnival<em>Patna</em></span>
   </a>
   <nav class="nav__links" aria-label="Primary">
@@ -27,6 +27,7 @@
     <a href="#gallery">Gallery</a>
     <a href="#visit">Visit</a>
   </nav>
+  <button class="btn btn--ghost theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
   <a class="btn btn--book" href="https://wa.me/919431088219?text=Hi%20Food%20Carnival!%20I%27d%20like%20to%20book%20a%20table." target="_blank" rel="noopener">Book on WhatsApp</a>
   <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
 </header>
@@ -51,14 +52,51 @@
         <a class="btn btn--ghost btn--lg" href="#menu">Browse the menu</a>
         <a class="btn btn--ghost btn--lg" href="https://wa.me/919431088219?text=Hi%20Food%20Carnival!%20I%27d%20like%20to%20book%20a%20table." target="_blank" rel="noopener">Book on WhatsApp</a>
       </div>
+      <div class="hero__rating" data-rise aria-label="Restaurant rating">
+        <div class="rating-wheel" aria-hidden="true">
+          <svg viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="42" fill="none" stroke="var(--brass-soft)" stroke-width="8" opacity="0.3"/>
+            <circle cx="50" cy="50" r="42" fill="none" stroke="var(--brass)" stroke-width="8" stroke-dasharray="264" stroke-dashoffset="26.4" transform="rotate(-90 50 50)"/>
+          </svg>
+          <div class="rating-wheel__text">
+            <span class="rating-wheel__num">4.2</span>
+            <span class="rating-wheel__star">★</span>
+          </div>
+        </div>
+        <div class="rating-info">
+          <strong>290+ guests rated</strong>
+          <span>Delicious &amp; authentic flavors</span>
+        </div>
+      </div>
       <ul class="hero__facts" data-rise>
         <li><strong>11:30–23:30</strong><span>Open every day</span></li>
         <li><strong>₹600</strong><span>for two, approx.</span></li>
-        <li><strong>4.2★</strong><span>290+ guests rated</span></li>
       </ul>
     </div>
     <div class="hero__badge" aria-hidden="true">
       <svg viewBox="0 0 200 200"><defs><path id="circlePath" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"/></defs><text><textPath href="#circlePath">EST. 2018 · WOOD FIRED · AWADHI · CHAMPARAN · DUM PUKHT · </textPath></text></svg>
+    </div>
+    <div class="hero__foodstrip" aria-hidden="true">
+      <div class="foodstrip__track">
+        <img src="https://images.unsplash.com/photo-1563379091339-03246963d51b?w=400&h=300&fit=crop" alt="Biryani" loading="lazy"/>
+        <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=400&h=300&fit=crop" alt="Butter Chicken" loading="lazy"/>
+        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&h=300&fit=crop" alt="Tandoori Chicken" loading="lazy"/>
+        <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=300&fit=crop" alt="Naan Bread" loading="lazy"/>
+        <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=400&h=300&fit=crop" alt="Samosa" loading="lazy"/>
+        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&h=300&fit=crop" alt="Paneer Tikka" loading="lazy"/>
+        <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=400&h=300&fit=crop" alt="Indian Curry" loading="lazy"/>
+        <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=300&fit=crop" alt="Dosa" loading="lazy"/>
+        <img src="https://images.unsplash.com/photo-1610057099431-d73a1c9d2f2f?w=400&h=300&fit=crop" alt="Gulab Jamun" loading="lazy"/>
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop" alt="Chicken Tikka" loading="lazy"/>
+        <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&h=300&fit=crop" alt="Tikka Masala" loading="lazy"/>
+        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=400&h=300&fit=crop" alt="Salad" loading="lazy"/>
+        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&h=300&fit=crop" alt="Kulfi" loading="lazy"/>
+        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&h=300&fit=crop" alt="Tandoori" loading="lazy"/>
+        <img src="https://images.unsplash.com/photo-1563379091339-03246963d51b?w=400&h=300&fit=crop" alt="Biryani" loading="lazy"/>
+        <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=400&h=300&fit=crop" alt="Butter Chicken" loading="lazy"/>
+        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&h=300&fit=crop" alt="Tandoori Chicken" loading="lazy"/>
+        <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=300&fit=crop" alt="Naan Bread" loading="lazy"/>
+      </div>
     </div>
   </section>
 
@@ -73,7 +111,7 @@
   <!-- STORY -->
   <section class="story" id="story">
     <div class="story__imgwrap" data-rise>
-      <img src="img/hero-6.jpg" alt="Kebabs firing on the charcoal tandoor" loading="lazy" />
+      <img src="https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=600&h=800&fit=crop" alt="Chef preparing food" loading="lazy" />
       <span class="story__stamp">Since<br>2018</span>
     </div>
     <div class="story__body">
@@ -154,7 +192,7 @@
 <!-- FOOTER -->
 <footer class="foot">
   <div class="foot__top">
-    <span class="nav__mark" aria-hidden="true">FC</span>
+    <img src="assets/logo.svg" alt="Food Carnival" class="nav__logo" aria-hidden="true" />
     <p>Food Carnival — a carnival of the old kitchens, on Bailey Road since 2018.</p>
   </div>
   <div class="foot__cols">

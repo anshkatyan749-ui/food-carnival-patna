@@ -1,0 +1,24 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Food Carnival logo">
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="240" fill="#7c2417" stroke="#d8b078" stroke-width="12"/>
+  <!-- Tent/Carnival top -->
+  <path d="M 140 180 L 256 110 L 372 180 L 340 200 L 256 150 L 172 200 Z" fill="#d8b078"/>
+  <!-- Fork -->
+  <g transform="translate(170, 210) rotate(-15)">
+    <rect x="8" y="60" width="14" height="90" rx="7" fill="#f5eee1"/>
+    <path d="M 15 60 L 15 30 M 5 30 L 25 30 M 8 30 L 8 20 M 15 30 L 15 18 M 22 30 L 22 22" stroke="#f5eee1" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <!-- Knife -->
+  <g transform="translate(290, 210) rotate(15)">
+    <rect x="8" y="40" width="14" height="110" rx="7" fill="#f5eee1"/>
+    <path d="M 15 40 Q 40 30 30 15 Q 20 5 15 15 Q 10 25 15 40" fill="none" stroke="#f5eee1" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- Plate/base -->
+  <ellipse cx="256" cy="320" rx="70" ry="24" fill="#f5eee1" opacity="0.9"/>
+  <!-- Star/carnival element -->
+  <g transform="translate(256, 320)">
+    <path d="M 0 -12 L 3.5 -3.5 L 12 -3.5 L 5 2 L 7.5 10.5 L 0 5.5 L -7.5 10.5 L -5 2 L -12 -3.5 L -3.5 -3.5 Z" fill="#b8823a"/>
+  </g>
+  <!-- Text -->
+  <text x="256" y="390" font-family="Marcellus, serif" font-size="36" font-weight="bold" fill="#f5eee1" text-anchor="middle" letter-spacing="2px">FC</text>
+</svg>
