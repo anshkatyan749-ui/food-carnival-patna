@@ -118,16 +118,16 @@
   /* ---------- gallery ---------- */
   var galleryGrid = document.getElementById('galleryGrid');
   var gPics = [
-    { img: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&h=800&fit=crop', alt: 'Signature butter chicken', cls: 'g-tall' },
+    { img: 'https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=600&h=800&fit=crop', alt: 'Butter chicken', cls: 'g-tall' },
     { img: 'https://images.unsplash.com/photo-1563379091339-03246963d51b?w=800&h=500&fit=crop', alt: 'Dum biryani', cls: 'g-wide' },
-    { img: 'https://images.unsplash.com/photo-1512058564366-18510be2db19?w=600&h=600&fit=crop', alt: 'Indian thali spread', cls: '' },
+    { img: 'https://images.unsplash.com/photo-1512058564366-18510be2db19?w=600&h=600&fit=crop', alt: 'Indian thali', cls: '' },
     { img: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&h=600&fit=crop', alt: 'Tandoori chicken', cls: '' },
     { img: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=800&h=500&fit=crop', alt: 'Garlic naan', cls: 'g-wide' },
-    { img: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&h=600&fit=crop', alt: 'Kebabs', cls: '' },
-    { img: 'https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&h=600&fit=crop', alt: 'Masala dosa', cls: '' },
+    { img: 'https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&h=600&fit=crop', alt: 'Kebabs', cls: '' },
     { img: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&h=600&fit=crop', alt: 'Paneer tikka', cls: '' },
-    { img: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=600&fit=crop', alt: 'Chef preparing food', cls: '' },
-    { img: 'https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=600&h=600&fit=crop', alt: 'Chef at work', cls: '' }
+    { img: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&h=600&fit=crop', alt: 'Chicken curry', cls: '' },
+    { img: 'https://images.unsplash.com/photo-1626804475297-41608ea09aeb?w=600&h=600&fit=crop', alt: 'Indo-Chinese', cls: '' },
+    { img: 'https://images.unsplash.com/photo-1579954115545-a95591f28bfc?w=600&h=600&fit=crop', alt: 'Desserts', cls: '' }
   ];
   galleryGrid.innerHTML = gPics.map(function (p) {
     return '<figure class="' + p.cls + '" data-rise><img loading="lazy" src="' + p.img + '" alt="' + p.alt + '" /></figure>';

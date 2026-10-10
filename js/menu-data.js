@@ -9,7 +9,7 @@ window.FC_MENU = [
     "time": "20 mins",
     "desc": "Tender chicken morsels marinated in hung curd, processed cheese, cashew cream, crushed green cardamom, and grilled to smoky perfection in our clay tandoor.",
     "rating": 4.9,
-    "img": "img/menu-0.jpg",
+    "img": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&h=400&fit=crop",
     "tags": [
       "Bestseller",
       "Awadhi",
@@ -26,7 +26,7 @@ window.FC_MENU = [
     "time": "22 mins",
     "desc": "Melt-in-mouth smoked lamb patties infused with raw papaya, brown onion paste, and Chef Roy’s secret 32-spice potli masala, served over mini sheermal crisps.",
     "rating": 4.9,
-    "img": "img/menu-1.jpg",
+    "img": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&h=400&fit=crop",
     "tags": [
       "Chef Signature",
       "Mutton",
@@ -43,7 +43,7 @@ window.FC_MENU = [
     "time": "18 mins",
     "desc": "Plump cottage cheese cubes layered with bell peppers, Spanish onions, and charred Roma tomatoes, steeped in mustard oil and yellow deghi chilli marinade.",
     "rating": 4.8,
-    "img": "img/menu-2.jpg",
+    "img": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&h=400&fit=crop",
     "tags": [
       "Vegetarian",
       "Tandoor Charred"
@@ -59,7 +59,7 @@ window.FC_MENU = [
     "time": "25 mins",
     "desc": "The undisputed Patna favorite. Whole spring chicken basted with Kashmiri mirch, roasted cumin, vinegar, and garlic ghee, roasted in red hot tandoor coals.",
     "rating": 4.8,
-    "img": "img/menu-3.jpg",
+    "img": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&h=400&fit=crop",
     "tags": [
       "Classic",
       "Spicy",
@@ -108,7 +108,7 @@ window.FC_MENU = [
     "time": "20 mins",
     "desc": "Charcoal-grilled tandoori chicken cooked in a velvety satin gravy of vine-ripened tomatoes, cashew butter, honey, and kasoori methi with churned white butter on top.",
     "rating": 4.9,
-    "img": "img/menu-6.jpg",
+    "img": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=600&h=400&fit=crop",
     "tags": [
       "Must Try",
       "Rich Gravy",
@@ -158,7 +158,7 @@ window.FC_MENU = [
     "time": "15 mins",
     "desc": "Whole black urad lentils and kidney beans simmered overnight over live charcoal tandoor embers, finished with pure dairy cream and homemade white butter.",
     "rating": 4.9,
-    "img": "img/menu-9.jpg",
+    "img": "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=600&h=400&fit=crop",
     "tags": [
       "Overnight Cooked",
       "Comfort Food"
@@ -206,7 +206,7 @@ window.FC_MENU = [
     "time": "25 mins",
     "desc": "Long-grain aged basmati rice layered with saffron-soaked chicken, browned shallots, fresh mint, and kewra water, slow-steamed under dough-sealed purdah. Served with Mirchi Salan & Raita.",
     "rating": 4.9,
-    "img": "img/menu-11.jpg",
+    "img": "https://images.unsplash.com/photo-1563379091339-03246963d51b?w=600&h=400&fit=crop",
     "tags": [
       "House Signature",
       "Fragrant Basmati",
@@ -223,7 +223,7 @@ window.FC_MENU = [
     "time": "25 mins",
     "desc": "Tender baby mutton bone-in cuts cooked in their own natural juices with aromatic shahi spices, layered with saffron rice and sealed for 45 minutes on slow dum.",
     "rating": 4.9,
-    "img": "img/menu-12.jpg",
+    "img": "https://images.unsplash.com/photo-1563379091339-03246963d51b?w=600&h=400&fit=crop",
     "tags": [
       "Mutton Lovers",
       "Dum Pukht"
@@ -352,7 +352,7 @@ window.FC_MENU = [
     "time": "10 mins",
     "desc": "Signature bread stuffed with molten mozzarella, chopped green chillies, garlic flakes, and oregano, pulled fresh from our blazing bhatti.",
     "rating": 4.9,
-    "img": "img/menu-0.jpg",
+    "img": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&h=400&fit=crop",
     "tags": [
       "Cheese Pull",
       "Chef Special"
@@ -400,7 +400,7 @@ window.FC_MENU = [
     "time": "8 mins",
     "desc": "Rich dark Belgian chocolate walnut brownie served on a cast iron sizzler plate, crowned with artisan vanilla bean gelato and bubbling warm fudge sauce.",
     "rating": 4.9,
-    "img": "img/menu-19.jpg",
+    "img": "https://images.unsplash.com/photo-1579954115545-a95591f28bfc?w=600&h=400&fit=crop",
     "tags": [
       "Sizzling",
       "Belgian Chocolate"
@@ -416,7 +416,7 @@ window.FC_MENU = [
     "time": "5 mins",
     "desc": "Traditional slow-cooked ground rice pudding flavored with pure Kashmiri saffron strands and kewra, served chilled in traditional earthen clay pots (matkas).",
     "rating": 4.8,
-    "img": "img/menu-20.jpg",
+    "img": "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&h=400&fit=crop",
     "tags": [
       "Clay Pot",
       "Saffron Flavored"
@@ -449,7 +449,7 @@ window.FC_MENU = [
     "time": "5 mins",
     "desc": "Thick churned farm curd infused with Alphonso mango pulp, saffron, slivered green pistachios, and served in an ice-cold terracotta kulhad.",
     "rating": 4.9,
-    "img": "img/menu-22.jpg",
+    "img": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=600&h=400&fit=crop",
     "tags": [
       "Traditional",
       "Thick Lassi",
