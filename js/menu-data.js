@@ -9,7 +9,7 @@ window.FC_MENU = [
     "time": "20 mins",
     "desc": "Tender chicken morsels marinated in hung curd, processed cheese, cashew cream, crushed green cardamom, and grilled to smoky perfection in our clay tandoor.",
     "rating": 4.9,
-    "img": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&h=400&fit=crop",
+    "img": "assets/real/fc-kebab.jpg",
     "tags": [
       "Bestseller",
       "Awadhi",
@@ -26,7 +26,7 @@ window.FC_MENU = [
     "time": "22 mins",
     "desc": "Melt-in-mouth smoked lamb patties infused with raw papaya, brown onion paste, and Chef Roy’s secret 32-spice potli masala, served over mini sheermal crisps.",
     "rating": 4.9,
-    "img": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&h=400&fit=crop",
+    "img": "assets/real/fc-kebab.jpg",
     "tags": [
       "Chef Signature",
       "Mutton",
@@ -59,7 +59,7 @@ window.FC_MENU = [
     "time": "25 mins",
     "desc": "The undisputed Patna favorite. Whole spring chicken basted with Kashmiri mirch, roasted cumin, vinegar, and garlic ghee, roasted in red hot tandoor coals.",
     "rating": 4.8,
-    "img": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&h=400&fit=crop",
+    "img": "assets/real/fc-kofta.jpg",
     "tags": [
       "Classic",
       "Spicy",
@@ -108,7 +108,7 @@ window.FC_MENU = [
     "time": "20 mins",
     "desc": "Charcoal-grilled tandoori chicken cooked in a velvety satin gravy of vine-ripened tomatoes, cashew butter, honey, and kasoori methi with churned white butter on top.",
     "rating": 4.9,
-    "img": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=600&h=400&fit=crop",
+    "img": "assets/real/fc-kofta.jpg",
     "tags": [
       "Must Try",
       "Rich Gravy",
@@ -206,7 +206,7 @@ window.FC_MENU = [
     "time": "25 mins",
     "desc": "Long-grain aged basmati rice layered with saffron-soaked chicken, browned shallots, fresh mint, and kewra water, slow-steamed under dough-sealed purdah. Served with Mirchi Salan & Raita.",
     "rating": 4.9,
-    "img": "https://images.unsplash.com/photo-1563379091339-03246963d51b?w=600&h=400&fit=crop",
+    "img": "assets/real/fc-biryani.jpg",
     "tags": [
       "House Signature",
       "Fragrant Basmati",
@@ -223,7 +223,7 @@ window.FC_MENU = [
     "time": "25 mins",
     "desc": "Tender baby mutton bone-in cuts cooked in their own natural juices with aromatic shahi spices, layered with saffron rice and sealed for 45 minutes on slow dum.",
     "rating": 4.9,
-    "img": "https://images.unsplash.com/photo-1563379091339-03246963d51b?w=600&h=400&fit=crop",
+    "img": "assets/real/fc-biryani.jpg",
     "tags": [
       "Mutton Lovers",
       "Dum Pukht"
@@ -271,7 +271,7 @@ window.FC_MENU = [
     "time": "15 mins",
     "desc": "Crisp boneless chicken tossed on blazing hot iron wok with diced green chillies, spring onions, dark soy sauce, and aromatic garlic wine vinegar.",
     "rating": 4.8,
-    "img": "img/menu-14.jpg",
+    "img": "assets/real/fc-chowmein.jpg",
     "tags": [
       "Wok Tossed",
       "Spicy Bar Snack"
@@ -303,7 +303,7 @@ window.FC_MENU = [
     "time": "14 mins",
     "desc": "Classic wok noodles flash-fried with shredded cabbage, bell peppers, carrots, scallions, and light white pepper seasoning with mild garlic sauce.",
     "rating": 4.7,
-    "img": "img/menu-16.jpg",
+    "img": "assets/real/fc-noodles.jpg",
     "tags": [
       "Kids Friendly",
       "Street Style"
@@ -319,7 +319,7 @@ window.FC_MENU = [
     "time": "15 mins",
     "desc": "Steamed Tibetan dumplings coated in seasoned panko crumbs, deep fried to golden crunch, tossed with fiery in-house Schezwan sauce and creamy mayo.",
     "rating": 4.8,
-    "img": "img/menu-17.jpg",
+    "img": "assets/real/fc-momos.jpg",
     "tags": [
       "Youth Craving",
       "Crunchy",
@@ -432,7 +432,7 @@ window.FC_MENU = [
     "time": "5 mins",
     "desc": "Signature celebratory cooler with blue curacao, freshly squeezed lime, crushed mint leaves, and effervescent sparkling soda over shaved ice.",
     "rating": 4.8,
-    "img": "img/menu-21.jpg",
+    "img": "assets/real/fc-mojito.jpg",
     "tags": [
       "Mocktail",
       "Refreshing",
